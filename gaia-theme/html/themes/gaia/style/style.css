@@ -26,7 +26,7 @@ input,textarea,select,input.button {border-width:1px;font:normal 11px Verdana,He
 /* PostNuke specific classes */
 .pn-menu {text-align:center;}
 /* news styles */
-.newssummary1 {padding:5px;border-left:1px solid #39341e;border-bottom:1px solid #39341e;border-top:1px solid #39341e;border-right:1px solid #39341e;}
+.newssummary1 {background-color:#dfdbc3;padding:5px;border-left:1px solid #39341e;border-bottom:1px solid #39341e;border-top:1px solid #39341e;border-right:1px solid #39341e;}
 .newssummary2 {padding:5px;border-left:1px solid #39341e;border-bottom:1px solid #39341e;border-top:1px solid #39341e;border-right:1px solid #39341e;}
 .newswrapper {margin-bottom:5px;}
 /* block styles */
@@ -37,7 +37,7 @@ input,textarea,select,input.button {border-width:1px;font:normal 11px Verdana,He
 #header {font-size:10px;text-align:right;}
 /* styles to create table-less layout */
 #wrapper {padding-top:5px;margin-left:5px;margin-right:5px;}
-#container {width:99%;float:left;margin-right:-170px;}
+#container {background:url(../images/gaia.png) top right no-repeat;width:99%;float:left;margin-right:-170px;}
 #content {margin-right:10px;}
 #main {margin-left:170px;}
 #left {float:left;width:160px;}
