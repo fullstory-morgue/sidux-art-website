@@ -1,0 +1,51 @@
+/* eros theme for sidux - feel free to use, but finish your PostNuke lessions before ;-) */
+/* style for the body tag; takes care of any text not inside a block element. We must style all block elements seperately as styles don't inherit through block elements */
+BODY {background:#d2d0ae;color:#39341e;font-size:11px;font-family:Verdana,Arial,Helvetica,sans-serif;margin-top:0;margin-left:1%;margin-right:0;margin-bottom:0;padding:0;width:99%;}
+/* block element styles */
+TABLE,DIV,P,INPUT,TEXTAREA,SELECT {color:#39341e;font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif;}
+/* prevent textareas from forcing horizontal scroll bar */
+textarea {width: 99%;}
+/* inline element styles */
+h1,.pn-pagetitle {font-weight:normal;font-size:14px;text-align:center;color:39341e;}
+h2,.pn-title {font-weight:normal;font-size:13px;text-align:center;color:39341e;}
+/* anchor styles */
+a:link, a:active, a:visited {color:#494949;text-decoration:underline;}
+a:hover {color:#beaf4d;text-decoration:none;}
+/* Lines */
+hr {border:0px solid #39341e;border-top-width:1px;height:0px}
+/* Added for Mozilla - still need to look at the black background problem though */
+iframe{border:0;}
+/* remove border from linked images */
+A IMG {border:0px;}
+/* Form elements */
+form {display:inline;}
+input {margin-bottom:2px;margin-top:2px;text-indent:2px;}
+input,textarea,select {border-color:#39341e;color:#39341e;font-size:11px;}
+/* Fancy form styles for IE */
+input,textarea,select,input.button {border-width:1px;font:normal 11px Verdana,Helvetica,Arial,sans-serif;}
+/* PostNuke specific classes */
+.pn-menu {text-align:center;}
+/* news styles */
+.newssummary1 {background-color:#dfdbc3;padding:5px;border-left:1px solid #39341e;border-bottom:1px solid #39341e;border-top:1px solid #39341e;border-right:1px solid #39341e;}
+.newssummary2 {padding:5px;border-left:1px solid #39341e;border-bottom:1px solid #39341e;border-top:1px solid #39341e;border-right:1px solid #39341e;}
+.newswrapper {margin-bottom:5px;}
+/* block styles */
+.sideblock {width:140px;padding-left:5px;padding-right:5px;color:39341e;}
+.centerblock {padding:0px;padding-left:5px;padding-right:5px;}
+#themelogo {}
+#themefooter {font-size:10px;text-align:center;}
+#header {font-size:10px;text-align:right;}
+/* styles to create table-less layout */
+#wrapper {padding-top:5px;margin-left:5px;margin-right:0px;}
+#container {background:url(../images/eros.png) top right no-repeat;width:100%;float:left;margin-right:-170px;}
+#content {margin-right:10px;}
+#main {margin-left:170px;}
+#left {float:left;width:160px;}
+#right {float:right;width:10px;}
+/* utility clearer class */
+.clearing {height:0px;clear:both;}
+/* legacy opentable function styles */
+.opentable1 {width:99%;border: 1px solid #39341e;margin-bottom:5px;}
+.opentable2 {border:1px solid #39341e;margin-bottom:5px;}
+/* defaut styling for lists */
+ul {margin-left:11px;padding-left:5px;text-indent:2px;list-style-type:circle;}
