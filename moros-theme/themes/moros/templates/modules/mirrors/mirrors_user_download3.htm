@@ -1,0 +1,18 @@
+<!--[*  $Id: mirrors_user_download.htm 2009-27-07 23:59:59 Wuertz $  *]-->
+<!--[pnml name=_DOWNLOAD_BEGIN assign=title]-->
+<!--[pnpagesetvar name=title value=$title]-->
+<h2><!--[$title]--></h2><br>
+
+<meta http-equiv=REFRESH CONTENT="1; url=<!--[$download.url]-->">
+
+<p><!--[pnml name=_DOWNLOAD_NS1]--> <a href="<!--[$download.url]-->"><!--[pnml name=_DOWNLOAD_NS2]--></a> <!--[pnml name=_DOWNLOAD_NS3]--></p>
+
+<ul>
+	<li><b><!--[pnml name=_DOWNLOAD_URL]-->:</b> <a href="<!--[$download.url]-->"><!--[$download.url]--></a></li>
+	<li><b><!--[pnml name=_SIDUX_EDITION]-->:</b> <!--[$download.edition]--></li>
+	<li><b><!--[pnml name=_COMPUTER_PLATFORM]-->:</b> <!--[$download.platform]--></li>
+	<li><b><!--[pnml name=_CHECKSUM]-->:</b> <!--[$download.checksum]--></li>
+</ul><br>
+
+<div class="pn-warningmsg"><!--[pnml name=_DAO_WARNING assign=dao_warning]-->
+<!--[$dao_warning]--></div>

@@ -1,0 +1,18 @@
+<!--[*  $Id: feeds_block_displayfeed.htm 90 2009-01-02 04:08:27Z mateo $  *]-->
+<ul>
+<!--[assign var='feeditems' value=$feed->get_items(0, $numitems)]-->
+<!--[foreach from=$feeditems item='feeditem']-->
+	<!--[assign var='feeditemlink' value=$feeditem->get_link()]-->
+	<!--[assign var='feeditemtitle' value=$feeditem->get_title()]-->
+	<!--[assign var='feeditemdate' value=$feeditem->get_date('M d')]-->
+	<li>
+		<a href="<!--[$feeditemlink]-->"><!--[$feeditemtitle|utf8decode]--></a>
+		<span class="text_light"><!--[pnml name='_ON']--> <!--[$feeditemdate|pnvarprepfordisplay]--></span>
+	</li>
+<!--[/foreach]-->
+</ul>
+<!--[if $bid eq 29]-->
+<div class="float_right pn-sub mt5">
+    <a href="/module-Forum-viewlatest.htm">&raquo; See all</a>
+</div>
+<!--[/if]-->

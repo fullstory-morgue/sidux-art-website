@@ -1,0 +1,32 @@
+<!--[*  $Id: mirrors_user_downloads.htm  2009-27-07 23:59:59 Wuertz $  *]-->
+<!--[pnajaxheader modname=mirrors filename=users.js]-->
+
+<!--[pnml name=_DOWNLOADS assign=title]-->
+<!--[pnpagesetvar name=title value=$title]-->
+<h2><!--[$title]--></h2>
+
+<form action="<!--[pnmodurl modname="mirrors" type="user" func="download2"]-->" method="post" enctype="application/x-www-form-urlencoded" >
+
+<p><h3><!--[pnml name=_CHOOSE_EDITION]--></h3>
+
+
+<input type="hidden" name="download[name]" value="<!--[$releaseName]-->"  />
+
+
+<br><table>
+<!--[pnml name='_DESC' assign=desc]-->
+<!--[foreach from=$editions item="edition"]-->
+	<tr><td valign="top">
+		<input type="radio" name="download[edition]" value="<!--[$edition]-->" <!--[ if $i!=1 ]-->checked<!--[ /if ]-->>
+	</td><td>
+		<b><!--[pnml name="_$edition"]-->:</b> <!--[pnml name="_$edition$desc"]--><br><br>
+	</td></tr>
+	<!--[pnml name=1 assign=i]-->
+<!--[/foreach]-->
+</table>
+
+<input type="submit" name="submit" value="Next">
+</form>
+<br>
+<p> --> <!--[pnml name=_preview_text]--> <a href="http://sidux.com/index.php?module=mirrors&func=download&release=preview">download</a> <-- </p>
+
