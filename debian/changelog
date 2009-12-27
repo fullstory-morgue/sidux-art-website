@@ -1,0 +1,5 @@
+PACKAGE (VERSION) UNRELEASED; urgency=low
+
+  * created set of seasonal logos, changed default to New Year logo.
+
+ -- Chris Hildebrandt <slam@sidux.com>  Sun, 27 Dec 2009 11:45:44 +0100
