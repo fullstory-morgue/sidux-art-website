@@ -1,0 +1,17 @@
+<!--[nocache]--><!--[php]-->header("Content-type: text/xml");<!--[/php]--><!--[/nocache]-->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!--[pnmodavailable modname=News assign=news]-->
+    <!--[if $news]-->
+        <!--[pnmodapifunc modname=News func=getall numitems=100 assign=stories]-->
+        <!--[if $stories]-->
+            <!--[foreach from=$stories item=story]-->
+                <url>
+                    <loc><!--[pnmodurl fqurl=true modname=News func=display sid=$story.sid]--></loc>
+                    <lastmod><!--[$story.lu_date|date_format:"%Y-%m-%d"]--></lastmod>
+                    <changefreq>daily</changefreq>
+                </url>
+            <!--[/foreach]-->
+        <!--[/if]-->
+    <!--[/if]-->
+</urlset>
