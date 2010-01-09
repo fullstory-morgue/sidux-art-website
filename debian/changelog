@@ -1,5 +1,6 @@
 PACKAGE (VERSION) UNRELEASED; urgency=low
 
+  * ypnos -> hypnos
   * fix default logo and preview image, add ypnos theme.
   * created set of seasonal logos, changed default to New Year logo.
 

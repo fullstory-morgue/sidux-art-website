@@ -1,6 +1,6 @@
 <?php
-$themeversion['name'] = ypnos;
-$themeversion['displayname'] = ypnos;
+$themeversion['name'] = hypnos;
+$themeversion['displayname'] = hypnos;
 $themeversion['version'] = '1.0';
 $themeversion['description'] = 'ypnos theme for sidux.com';
 $themeversion['author'] = 'Chris (slam) Hildebrandt';
