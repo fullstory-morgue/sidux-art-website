@@ -4,7 +4,7 @@ html {
 }
 body {
   min-width:785px;
-  background:white url(../images/fred_bg_g.gif) no-repeat scroll 60px 0;
+  background:white;
   font-size:11px;
     font-family:sans-serif;
 }
