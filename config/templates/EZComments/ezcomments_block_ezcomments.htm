@@ -1,0 +1,22 @@
+
+<ul class="list_lined">
+<!--[foreach from=$comments item='comment']-->
+	<li><a href="<!--[$comment.url|pnvarprepfordisplay]-->#comment<!--[$comment.id|pnvarprepfordisplay]-->">
+		<!--[if $comment.subject neq '']-->
+			<!--[$comment.subject|pnvarprepfordisplay]-->
+		<!--[else]-->
+			<!--[$comment.comment|strip_tags:false|truncate:30|pnvarprepfordisplay]-->
+		<!--[/if]-->
+		<span class="text_light"><!--[pnml name='_ON']--> <!--[$comment.date|pndate_format:'%b %d'|pnvarprephtmldisplay]--></span>
+		</a>
+		<span class="text_light">
+		<!--[pnml name=_BY]-->
+		<!--[if $linkusername]-->
+			<!--[$comment.uname|pnvarprepfordisplay|userprofilelink]-->
+		<!--[else]-->
+			<!--[$comment.uname|pnvarprepfordisplay]-->
+		<!--[/if]-->
+		</span>
+	</li>
+<!--[/foreach]-->
+</ul>
