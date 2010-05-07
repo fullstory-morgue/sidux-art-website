@@ -1,3 +1,9 @@
+PACKAGE (VERSIOP) UNRELEASED; urgency=low
+
+  * add rss theme with news templates
+
+ -- Chris Hildebrandt <slam@sidux.com>  Fri, 07 May 2010 19:54:36 +0200
+
 PACKAGE (VERSIOO) UNRELEASED; urgency=low
 
   * tag hypnos-theme, not used any more. update recent moros-theme in trunk
